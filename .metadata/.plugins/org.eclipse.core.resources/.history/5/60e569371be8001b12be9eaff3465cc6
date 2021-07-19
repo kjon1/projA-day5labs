@@ -1,0 +1,66 @@
+package main;
+
+import java.util.Scanner;
+
+
+public class Converter {
+	
+	
+	public static void main (String[]args) {
+		
+		int menuSelection;
+		int pounds;
+		int kilograms;
+		
+		Scanner sc = new Scanner(System.in);
+
+	
+	//while (menuSelection != menuSelection) { 
+	//public void menu() {
+
+	System.out.println("Welcome to Unit Converter Online.");
+	System.out.println("Please select an option.");
+	System.out.println("1. Pounds to Kilograms");
+	System.out.println("2. Kilograms to pounds");
+	System.out.println("3. Quit application and exit.");
+	
+	
+	menuSelection = sc.nextInt();
+	
+	switch (menuSelection) {
+	case 1: 
+		System.out.println("Enter weight in pounds to convert.");
+		pounds = sc.nextInt();
+		double convertedKilograms = pounds * 0.45;
+		System.out.println(pounds  + " pounds is equivalent to " + convertedKilograms + " kilograms.");
+		
+		break;
+		
+	case 2:
+		System.out.println("Enter weight in kilograms to convert.");
+		kilograms = sc.nextInt();
+		double convertedPounds = kilograms * 2.2;
+		System.out.println(kilograms + " kilograms is equivalent to " + convertedPounds + " pounds.");
+		break;
+		
+	case 3:
+		System.out.println("Thank you for using Unit Converter. Goodbye!");
+		break;
+	}
+	
+
+		
+	}
+	
+}
+		
+		
+		
+		
+	
+
+	
+	
+
+
+
